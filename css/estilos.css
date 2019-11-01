@@ -1,0 +1,185 @@
+
+/*--- GLOBALES ---*/
+body {font-family: monospace; padding: 3.5em 0 0 0;}
+h1, h2, h3, h4 {font-family: 'Lobster', cursive; text-align:text-center;}
+h2 {margin-bottom: 1.3em;}
+h2 {font-size: 4rem;}
+hr {border: solid thin black; width: 30%;}
+
+
+/*--- HEADER Y NAV ---*/
+header .navbar-brand img {width: 170px;}
+header .logohead {background-color:rgba(243,255,44,1);}
+header .logohead img {width: 150px;}
+nav.navbar {background-color:rgba(12,29,48,1);} 
+nav.navbar .navbar-nav li.nav-item a {
+	font-family: monospace;
+	font-size: 1.4em;
+	background: rgba(12,29,48,1);
+	color:white;
+	transition: all .3s;
+	padding:10px 20px;
+}
+nav.navbar .navbar-nav li.nav-item a:hover {
+	background: rgba(243,255,44,1);
+	color: black;
+}
+nav.navbar .navbar-nav li.nav-item a:focus {
+	background: rgba(243,255,44,1);
+	color: black;
+}
+
+
+/*--- CAROUSEL DE IMAGENES ---*/
+#c-caro .carousel-inner img {width: 100%;}
+#c-caro .carousel-caption {text-shadow:3px 3px 1px black; bottom:50%; }
+#c-caro h3 {font-size: 5em;}
+#c-caro p{font-size: 2em;}
+
+/*--- HISTORIA ---*/
+#historia {padding: 4rem 0;}
+#historia p {font-size: 1.5em;}
+#historia hr {border: solid thin red; width: 30%;}
+
+
+/*--- INTEGRANTES ---*/
+#integrantes {background-color: #f3e12c;padding: 4rem 0;}
+#integrantes img {
+	border-radius:50%;
+	border: solid 20px #212529;
+	transition: all 0.3s;
+	max-width: 75%;
+}
+#integrantes img:hover {
+	border: solid 5px white;
+	cursor: 
+}
+#integrantes h3{margin:1.5rem 0; font-size: 3em;}
+#integrantes p {text-align: center; font-size:1.3rem; line-height: 1.2;}
+#integrantes span {background: black;color: white;padding: 0 5px;}
+
+/*--- FRASE ---*/
+#c-media {
+	background-image: url("../img/nirvana-03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#c-media h3{
+	font-size: 3rem; 
+	margin:2em 0;
+	text-align: center;
+	text-shadow: 3px 3px 5px black; 
+	color: rgba(243,255,44,.9)	;
+}
+
+
+/*--- DISCOGRAFIA ---*/
+.bg-yellow {background: rgba(243,255,44,.9); color: black;}
+.bg-negro {background: rgba(12,29,48,.9); color: white;}
+#disco {background-color: black;padding: 4rem 0;}
+#disco h2 {color: white;}
+#disco .caja {position: relative;}
+
+#disco .persiana {
+	position: absolute;
+	overflow: hidden;
+	bottom: 100%;
+	left:0;
+	width: 100%;
+	height: 0;
+	transition: all .4s;
+}
+#disco .caja:hover .persiana {
+	bottom: 0;
+	height: 100%;
+}
+#disco .text {
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	font-size: 1.2rem;
+	text-align: center;
+}
+#disco .text p {
+	font-size: 1.2em;
+}
+
+
+/*--- CONTACTO ---*/
+#contacto {padding: 4rem 0;}
+#contacto .form-control {
+	border:none;
+	border-bottom: 1px solid black;
+	border-radius: 0;
+}
+#contacto .form-control:focus {
+	border-bottom: 2px solid rgba(243,255,44,.9);
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+#contacto .form-check-input {
+    position: inherit;
+    /*por defecto esta en absoluto y queda descentrada con el texto, eso se descubre con el inspector de google chrome
+    desactivando y/o agregando reglas css al elemento - recuerden usarlo - */
+    width: 20px;
+    height: 20px;
+}
+#contacto label {font-size: 2em; font-weight: bold;}
+#contacto h4 {font-size: 2em; margin-bottom: 1em; border-bottom: solid thin black;padding-bottom: 10px;}
+#contacto p {font-size:1.3rem;}
+#contacto ul {list-style-type:none; font-size: 1.3rem;margin-top: 2em;}
+#contacto li:first-child{color:orange;}
+#contacto li:nth-child(3){color:red;}
+#contacto li:last-child{color:green;}
+#contacto .fa {margin-right: 15px; width: 40px; height: 40px; color: black;}
+#contacto button.btn {
+	border-radius: 0;
+}
+
+#contacto .btn-primary {
+	background: rgba(12,29,48,.9);
+    color: white;
+    border: none;
+    transition: all .3s;
+}
+#contacto .btn-primary:hover {
+	background: rgba(243,255,44,.9);
+    color: black;
+    border: none;
+}
+#contacto .form-group .invalid-feedback {font-size: 1.5em;}
+#contacto .form-check-label .invalid-feedback {font-size: 0.8em; font-weight: normal; margin:0 0 0 10px;}
+
+
+/*--- FOOTER ---*/
+footer {padding: 4em 0 2em 0; background: black;border-top:solid 4px #f3e12c;}
+footer .fa {margin: 0 10px;}
+footer a {color:white;transition: ease .5s;}
+footer a:hover{color:#f3e12c;}
+footer p {color: #f3e12c;}
+
+
+/*---- RESPONSIVE MEDIA QUERYS // SIEMPRE VAN AL FINAL DEL CSS ------*/
+@media screen and (min-width: 570px){
+	body {padding-top: 80px;}
+	nav.navbar {background-color:rgba(12,29,48,1);padding:0;} 
+	#c-caro .carousel-control-next-icon, #c-caro .carousel-control-prev-icon {
+    width: 50px;
+    height: 50px;
+	}
+
+}
+/* Agreué este mediaquery para ajustar algunas cosillas en la version movil, por ejemplo centrar los textos de la 2da
+columna de contacto y darle margin con el formulario aprovechando :last-child */
+@media screen and (max-width: 570px){
+	#contacto h4, #contacto p, #contacto li {text-align: center;}
+	#contacto .fa {margin: 0 25px 20px 0; width: 20px; height: 20px; color: black;}
+	#contacto li:last-child{margin-bottom: 2em;}
+}
+
+
